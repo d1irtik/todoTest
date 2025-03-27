@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #f9f9f9;
+}
+
+.status {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.status.completed {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.text {
+  flex: 1;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  font-size: 20px;
+}
+
+.text.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+.deleteButton {
+  background: none;
+  border: none;
+  color: #cc9a9a;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding: 0 8px;
+}
+
+.container:hover .deleteButton {
+  opacity: 1;
+}
+
+.deleteButton:hover {
+  color: #af5b5e;
+}
